@@ -44,25 +44,21 @@
   padding: 15px;
 }
 
-/* unvisited link */
 a:link {
     color: green;
   }
   
-  /* visited link */
-  a:visited {
-    color: green;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #8FBC8F;
-  }
-  
-  /* selected link */
-  a:active {
-    color: green;
-  }
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: #8FBC8F;
+}
+
+a:active {
+  color: green;
+}
 
 .menu {
     margin: 0;
