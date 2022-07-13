@@ -1,5 +1,5 @@
 .profile-pic {
-    width: 120px;
+    width: 50%;
     border-radius: 100%;
     border: solid 1px #90EE90;
     display: block;
@@ -17,10 +17,14 @@
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
+  padding: 0px;
 }
   
   @media only screen and (min-width: 1000px) {
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
     .profile-pic {
       width: 100%;
     }
