@@ -7,41 +7,41 @@
 }
 
 .main-container {
-    margin: 0px 20%;
+    margin: 0px 5%;
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* For mobile phones: */
 [class*="col-"] {
     width: 100%;
-}
-
-.header-image-container {
-    margin-right: 15px;
-}
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    p {
-        text-align: justify;
-    }
 }
 
 [class*="col-"] {
   float: left;
   padding: 15px;
+}
+  
+  @media only screen and (min-width: 1000px) {
+    .profile-pic {
+      width: 100%;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: calc(16.66% - 30px);}
+    .col-3 {width: calc(25% - 30px);}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: calc(75% - 30px)}
+    .col-10 {width: calc(83.33% - 30px)}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: calc(100% - 30px);}
+    p:not(.basic-info) {
+        text-align: justify;
+    }
+    .main-container {
+      margin: 0px 15%;
+    }
 }
 
 a:link {
@@ -67,4 +67,17 @@ a:active {
 
 h7 {
     color: green;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  margin-left: -2.5em;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: green; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
 }
