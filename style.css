@@ -9,20 +9,18 @@
 .main-container {
     margin: 0px 5%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
+    font-size: 16px;
 }
 
-.basic-info-ul li{
-  padding: 25 10;  
+.basic-info-ul li {
+  padding: 0 10;  
 }
 
 [class*="col-"] {
     width: 100%;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 0px;
+    float: left;
+    padding: 0px;
+    margin-bottom: 10px;
 }
 
 a:link {
@@ -89,9 +87,5 @@ width: 1em; /* Also needed for space (tweak if needed) */
   }
   .main-container {
     margin: 0px 15%;
-    font-size: 16px;
-  }
-  .basic-info-ul li {
-    padding: 0;
   }
 }
